@@ -1,0 +1,6 @@
+#!/bin/sh -x
+
+rules=$(find /tmp -name "rules")
+dir=$(dirname $(dirname $rules))
+cd $dir
+$rules tardist
